@@ -34,12 +34,10 @@ Everything builds inside of Docker, and cleans up after itself (Except for the a
 
 - **`--version`**  
 The version of Aseprite to build. If this is not specified, it will build the latest stable version.  
-   > [!IMPORTANT]
    > You **MUST** prepend `v` to the version. Example: `v1.3.15`
 
 - **`--keep-image`**  
 Don't delete the Docker image containing the built AppImage after the build finishes.
-   > [!NOTE]
    > Not sure how useful this flag actually is, as Docker still keeps cached layers. The build script only removes the image itself (`docker rmi`), not the cache.
 
 ## Legal Disclaimer
